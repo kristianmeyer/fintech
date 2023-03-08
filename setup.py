@@ -7,10 +7,8 @@ with open('README.md', encoding='utf-8') as readme_file:
     readme = readme_file.read()
 
 requirements = [
-    'openbb'
+    'openbb[all]'
 ]
-
-
 
 setup(
     name='fintech',
@@ -20,7 +18,7 @@ setup(
     ),
     long_description=readme,
     long_description_content_type='text/markdown',
-    author='Kristian Meyer',
+    author='Kristian Meyer, Peter Bollhorn',
     author_email='kristianmeyer@icloud.com',
     packages=['fintech'],
     package_dir={'fintech': 'fintech'},
